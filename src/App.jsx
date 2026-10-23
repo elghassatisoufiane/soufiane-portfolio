@@ -32,7 +32,7 @@ import {
 const github = "https://github.com/elghassatisoufiane";
 
 // Remplacer plus tard par ton vrai profil LinkedIn
-const linkedin = "https://www.linkedin.com/";
+const linkedin = "https://www.linkedin.com/in/soufiane-el-ghassati-769158424/";
 
 const skills = [
   { name: "Java", icon: FaJava, color: "#f89820" },
