@@ -31,8 +31,8 @@ import {
 
 const github = "https://github.com/elghassatisoufiane";
 
-// Remplacer plus tard par ton vrai profil LinkedIn
-const linkedin = "https://www.linkedin.com/in/soufiane-el-ghassati-769158424/";
+const linkedin =
+  "https://www.linkedin.com/in/soufiane-el-ghassati-769158424/";
 
 const skills = [
   { name: "Java", icon: FaJava, color: "#f89820" },
@@ -324,10 +324,11 @@ function App() {
             <h2>
               Featured <span className="gradient-text">work.</span>
             </h2>
-            <p>My portfolio is growing as I build new projects.</p>
+            <p>Explore the projects I've built and deployed.</p>
           </div>
 
           <div className="projects-grid">
+            {/* PROJECT 1 — PERSONAL PORTFOLIO */}
             <div className="glass-card project-card">
               <div className="project-icon">
                 <FaLaptopCode />
@@ -351,35 +352,63 @@ function App() {
               </div>
 
               <a
-                href={github}
+                href="https://elghassatisoufiane.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Profile <FaExternalLinkAlt />
+                Live Demo <FaExternalLinkAlt />
+              </a>
+
+              <a
+                href="https://github.com/elghassatisoufiane/soufiane-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code <FaGithub />
               </a>
             </div>
 
+            {/* PROJECT 2 — TASKFLOW */}
             <div className="glass-card project-card">
               <div className="project-icon">
-                <FaDatabase />
+                <FaLaptopCode />
               </div>
 
               <span className="project-category">
-                COMING SOON
+                WEB APPLICATION
               </span>
 
-              <h3>More Projects Ahead</h3>
+              <h3>TaskFlow — Task Management Dashboard</h3>
 
               <p>
-                I'm continuing to learn and develop practical
-                applications. New projects will be added here.
+                A modern task management application built with React,
+                featuring a responsive dashboard, task creation,
+                editing, deletion, search, filters, progress tracking,
+                and persistent local storage.
               </p>
 
               <div className="project-tags">
-                <span>Java</span>
-                <span>.NET</span>
-                <span>Databases</span>
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>Vite</span>
               </div>
+
+              <a
+                href="https://taskflow-delta-ecru-96.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo <FaExternalLinkAlt />
+              </a>
+
+              <a
+                href="https://github.com/elghassatisoufiane/taskflow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code <FaGithub />
+              </a>
             </div>
           </div>
         </section>
